@@ -1,0 +1,5 @@
+[MESSAGES CONTROL]
+disable=duplicate-code,invalid-name,global-statement,missing-function-docstring,missing-class-docstring,missing-module-docstring,missing-final-newline
+
+[FORMAT]
+max-line-length=120
