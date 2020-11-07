@@ -1,5 +1,4 @@
-" set line numbers
-set nu
+" set line numbers set nu
 
 " current line highlight
 set cursorline
@@ -30,3 +29,18 @@ set scrolloff=5
 
 " disable word wrap
 :set wrap!
+
+" use nerdtree plugin
+call plug#begin()
+Plug 'preservim/nerdtree'
+call plug#end()
+
+" show hidden files NERDtree
+let NERDTreeShowHidden=1
+
+" open current dir on nerdtree if no file is specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+"toggle nerdtree
+nnoremap <F2> :NERDTreeToggle<cr>
