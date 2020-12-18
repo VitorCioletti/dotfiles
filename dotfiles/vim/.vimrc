@@ -26,7 +26,7 @@ set title
 set hlsearch
 
 " clear highlight results using ESC key
-nnoremap <esc> :noh<return><esc>
+nnoremap <space> :noh<return><space>
 
 " visible lines above/below cursor
 set scrolloff=5
