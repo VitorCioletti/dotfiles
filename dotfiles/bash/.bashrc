@@ -1,18 +1,18 @@
-# if not running interactively, don't do anything
-case $- in
-    *i*) ;;
-      *) return;;
-esac
-
 # append to the history file, don't overwrite it
 shopt -s histappend
+
+# update values of lines and columns if window is resized
+#shopt -s checkwinsize
+
+# ignore duplicates and spaces
+HISTCONTROL=ignoredups:ignorespace
 
 # history size 
 HISTSIZE=10000
 HISTFILESIZE=20000
 
 # configuring prompt
-PS1='\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 # custom aliases
 alias ls='ls --color=auto'
