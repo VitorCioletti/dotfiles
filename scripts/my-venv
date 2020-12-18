@@ -1,0 +1,13 @@
+if test -d venv
+then
+   rm -rf venv
+fi
+
+python3.7 -m venv venv
+
+venv/bin/pip install wheel boto3 pylint==2.5.3 mypy pipdeptree
+
+if test -f requirements.txt
+then
+   venv/bin/pip install -r requirements.txt
+fi
