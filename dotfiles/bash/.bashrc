@@ -18,6 +18,10 @@ alias ls='ls --color=auto'
 alias lha='ls -lha --color=auto'
 alias grep='grep --color=auto'
 alias clipboard='xclip -selection c' 
+# gzip, create, verbose, file
+alias compresstarball='tar -zcvf'
+# gzip, extract, verbose, file
+alias extracttarball='tar -zxvf'
 
 # custom scripts
 export PATH="/home/$USER/Arquivos/projetos/loovi/scripts-publicacao/:$PATH"
