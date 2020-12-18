@@ -1,2 +1,4 @@
-plugged/
+*.swo
+*.swp
 .netrwhist
+plugged/
