@@ -25,7 +25,7 @@ set title
 " highlight search results
 set hlsearch
 
-" clear highlight results using ESC key
+" clear highlight results using SPACE key
 nnoremap <space> :noh<return><space>
 
 " visible lines above/below cursor
