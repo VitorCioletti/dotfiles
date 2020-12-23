@@ -1,1 +1,1 @@
-venv/bin/pylint `arquivos-py`
+venv/bin/pylint `files-py`

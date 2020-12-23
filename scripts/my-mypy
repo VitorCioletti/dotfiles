@@ -1,1 +1,1 @@
-venv/bin/mypy `arquivos-py`
+venv/bin/mypy `files-py`
