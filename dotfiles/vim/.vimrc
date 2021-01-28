@@ -30,6 +30,3 @@ nnoremap <space> :noh<return><space>
 
 " visible lines above/below cursor
 set scrolloff=5
-
-" disable word wrap
-:set wrap!
