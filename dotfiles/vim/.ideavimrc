@@ -14,7 +14,7 @@ set autoindent
 set hlsearch
 
 " clear highlight results using SPACE key
-nnoremap <space> :noh<return><space>
+nmap <space> :noh<return><space>
 
 " visible lines above/below cursor
 set scrolloff=5
@@ -24,12 +24,14 @@ set scrolloff=5
 set NERDTree
 
 " clear the search buffer when hitting return
- nnoremap <Leader>/ :nohlsearch<cr>
+nmap <Leader>/ :nohlsearch<cr>
 
 let mapleader = "\<SPACE>"
 
 nmap <leader>s :action SearchEverywhere<CR>
 nmap <leader>r :action RenameElement<CR>
 nmap <leader>f :action ReformatCode<CR>
+nmap <leader>i :action OptimizeImports<CR>
+nmap <leader>. :action Refactorings.QuickListPopupAction<CR>
 
 nmap <leader>e :NERDTreeToggle<CR>
