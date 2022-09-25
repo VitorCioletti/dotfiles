@@ -1,37 +1,21 @@
-" current line highlight
-set cursorline
-
-" limit line at 120
-set cc=121
-
-" tab to 4 spaces
-set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab smartindent
-
-" new lines inherit indentation of previous ones.
-set autoindent
+set NERDTree
 
 " highlight search results
 set hlsearch
 
-" clear highlight results using SPACE key
-nmap <space> :noh<return><space>
-
 " visible lines above/below cursor
 set scrolloff=5
 
-" idea vim
-
-set NERDTree
+let mapleader = "\<SPACE>"
 
 " clear the search buffer when hitting return
-nmap <Leader>/ :nohlsearch<cr>
-
-let mapleader = "\<SPACE>"
+nnoremap <silent> <CR> :noh<CR>
 
 nmap <leader>s :action SearchEverywhere<CR>
 nmap <leader>r :action RenameElement<CR>
 nmap <leader>f :action ReformatCode<CR>
-nmap <leader>i :action OptimizeImports<CR>
-nmap <leader>. :action Refactorings.QuickListPopupAction<CR>
-
-nmap <leader>e :NERDTreeToggle<CR>
+nmap <leader>o :action OptimizeImports<CR>
+nmap <leader>. :action ShowIntentionActions<CR>
+nmap <leader>u :action ShowUsages<CR>
+nmap <leader>g :action GotoImplementation<CR>
+nmap <leader>e :NERDTree<CR>
