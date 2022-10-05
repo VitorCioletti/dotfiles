@@ -19,3 +19,13 @@ nmap <leader>. :action ShowIntentionActions<CR>
 nmap <leader>u :action ShowUsages<CR>
 nmap <leader>g :action GotoImplementation<CR>
 nmap <leader>e :NERDTree<CR>
+
+nmap <leader>ne :action GotoNextError<CR>
+nmap <leader>pe :action GotoPreviousError<CR>
+nmap <leader>b :action ToggleLineBreakpoint<CR>
+nmap <leader>9 :action Debug<CR>
+nmap <leader>0 :action Stop<CR>
+
+nmap <leader>cl :action CommentByLineComment<CR>
+vmap <leader>cl :action CommentByLineComment<CR>
+nmap <leader>x :action HideAllWindows<CR>
