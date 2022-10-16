@@ -19,6 +19,7 @@ nmap <leader>. :action ShowIntentionActions<CR>
 nmap <leader>u :action ShowUsages<CR>
 nmap <leader>g :action GotoImplementation<CR>
 nmap <leader>e :NERDTree<CR>
+nmap <leader>t :action ActivateTerminalToolWindow<CR>
 
 nmap <leader>ne :action GotoNextError<CR>
 nmap <leader>pe :action GotoPreviousError<CR>
