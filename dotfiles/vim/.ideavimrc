@@ -16,17 +16,20 @@ nmap <leader>r :action RenameElement<CR>
 nmap <leader>f :action ReformatCode<CR>
 nmap <leader>o :action OptimizeImports<CR>
 nmap <leader>. :action ShowIntentionActions<CR>
+vmap <leader>. :action ShowIntentionActions<CR>
 nmap <leader>u :action ShowUsages<CR>
 nmap <leader>g :action GotoImplementation<CR>
 nmap <leader>e :NERDTree<CR>
 nmap <leader>t :action ActivateTerminalToolWindow<CR>
-
-nmap <leader>ne :action GotoNextError<CR>
-nmap <leader>pe :action GotoPreviousError<CR>
+nmap <leader>i :action ParameterInfo<CR>
+nmap <leader>d :action ShowErrorDescription<CR>
+nmap <leader>n :action GotoNextError<CR>
+nmap <leader>p :action GotoPreviousError<CR>
 nmap <leader>b :action ToggleLineBreakpoint<CR>
 nmap <leader>9 :action Debug<CR>
 nmap <leader>0 :action Stop<CR>
-
-nmap <leader>cl :action CommentByLineComment<CR>
-vmap <leader>cl :action CommentByLineComment<CR>
+nmap <leader>c :action CommentByLineComment<CR>
+vmap <leader>c :action CommentByLineComment<CR>
 nmap <leader>x :action HideAllWindows<CR>
+
+nmap <leader>z :source ~/.ideavimrc<CR>
