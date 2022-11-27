@@ -1,0 +1,91 @@
+{
+    "editor.rulers": [ 120 ],
+    "extensions.ignoreRecommendations": true,
+    "files.autoSave": "afterDelay",
+
+    "vim.leader": "<space>",
+
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<tab>"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<S-tab>"],
+            "commands": ["workbench.action.previousEditor"]
+        },
+    ],
+
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "s"],
+            "commands": ["workbench.action.quickOpenNavigateNextInFilePicker"]
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["editor.action.formatDocument"]
+        },
+        {
+            "before": ["<leader>", "r"],
+            "commands": ["editor.action.rename"]
+        },
+        {
+            "before": ["<leader>", "o"],
+            "commands": [""]
+        },
+        {
+            "before": ["<leader>", "."],
+            "commands": ["editor.action.quickFix"]
+        },
+        {
+            "before": ["<leader>", "g"],
+            "commands": ["editor.action.goToReferences"]
+        },
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.explorer.fileView.focus"]
+        },
+        {
+            "before": ["<leader>", "t"],
+            "commands": ["workbench.action.terminal.toggleTerminal"]
+        },
+        {
+            "before": ["<leader>", "i"],
+            "commands": ["editor.action.triggerParameterHints"]
+        },
+        {
+            "before": ["<leader>", "n"],
+            "commands": ["editor.action.marker.next"]
+        },
+        {
+            "before": ["<leader>", "p"],
+            "commands": ["editor.action.marker.prev"]
+        },
+        {
+            "before": ["<leader>", "b"],
+            "commands": ["editor.debug.action.toggleBreakpoint"]
+        },
+        {
+            "before": ["<leader>", "9"],
+            "commands": ["workbench.action.debug.start"]
+        },
+        {
+            "before": ["<leader>", "0"],
+            "commands": ["workbench.action.debug.stop"]
+        },
+        {
+            "before": ["<leader>", "c"],
+            "commands": ["editor.action.commentLine"]
+        },
+        {
+            "before": ["<leader>", "x"],
+            "commands": [""]
+        },
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "c"],
+            "commands": ["editor.action.commentLine"]
+        },
+    ],
+}
