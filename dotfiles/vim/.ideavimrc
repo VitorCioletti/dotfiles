@@ -8,6 +8,8 @@ set scrolloff=5
 
 let mapleader = "\<SPACE>"
 
+nmap <TAB> :tabnext<CR>
+
 " clear the search buffer when hitting return
 nnoremap <silent> <CR> :noh<CR>
 
