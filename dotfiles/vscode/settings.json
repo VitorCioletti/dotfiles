@@ -84,6 +84,10 @@
         {
             "before": ["<leader>", "s"],
             "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "c", "o"],
+            "commands": ["workbench.action.closeOtherEditors"]
         }
 
     ],
