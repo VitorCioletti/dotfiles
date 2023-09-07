@@ -3,7 +3,13 @@
     "extensions.ignoreRecommendations": true,
     "files.autoSave": "afterDelay",
 
+    "nerdtree.hideSidebarWhenOpenFile": false,
+
     "vim.leader": "<space>",
+
+    "vim.handleKeys": {
+		"<C-n>": false
+	},
 
     "vim.normalModeKeyBindings": [
         {
@@ -40,10 +46,6 @@
         {
             "before": ["<leader>", "g"],
             "commands": ["editor.action.goToReferences"]
-        },
-        {
-            "before": ["<leader>", "e"],
-            "commands": ["workbench.explorer.fileView.focus"]
         },
         {
             "before": ["<leader>", "t"],

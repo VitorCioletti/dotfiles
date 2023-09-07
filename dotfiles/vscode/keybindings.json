@@ -1,3 +1,3 @@
 [
-    {"key": "q", "command": "workbench.action.closeSidebar"}
+    {"key": "ctrl+q", "command": "workbench.action.closeSidebar"}
 ]
