@@ -1,5 +1,11 @@
 {
     "editor.rulers": [ 120 ],
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "off",
+
     "extensions.ignoreRecommendations": true,
     "files.autoSave": "afterDelay",
 
@@ -19,14 +25,18 @@
         {
             "before": ["<S-tab>"],
             "commands": ["workbench.action.previousEditor"]
-        }
+        },
+        {
+            "before": ["<leader>", "n", "e"],
+            "commands": ["editor.action.marker.next"]
+        },
+        {
+            "before": ["<leader>", "p", "e"],
+            "commands": ["editor.action.marker.prev"]
+        }    
     ],
 
     "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["<leader>", "s"],
-            "commands": ["workbench.action.quickOpenNavigateNextInFilePicker"]
-        },
         {
             "before": ["<leader>", "f"],
             "commands": ["editor.action.formatDocument"]
@@ -34,10 +44,6 @@
         {
             "before": ["<leader>", "r"],
             "commands": ["editor.action.rename"]
-        },
-        {
-            "before": ["<leader>", "o"],
-            "commands": [""]
         },
         {
             "before": ["<leader>", "."],
@@ -54,14 +60,6 @@
         {
             "before": ["<leader>", "i"],
             "commands": ["editor.action.triggerParameterHints"]
-        },
-        {
-            "before": ["<leader>", "n"],
-            "commands": ["editor.action.marker.next"]
-        },
-        {
-            "before": ["<leader>", "p"],
-            "commands": ["editor.action.marker.prev"]
         },
         {
             "before": ["<leader>", "b"],
@@ -81,13 +79,26 @@
         },
         {
             "before": ["<leader>", "x"],
-            "commands": [""]
+            "commands": ["workbench.action.closePanel", "ctrl+n"]
+        },
+        {
+            "before": ["<leader>", "s"],
+            "commands": ["workbench.action.quickOpen"]
         }
+
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": ["<leader>", "c"],
             "commands": ["editor.action.commentLine"]
-        }
-    ]
+        } 
+    ],
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.toggleMaximizedPanelAndFocusTerminal",
+      "sequence": [
+        "workbench.action.toggleMaximizedPanel",
+        "workbench.action.terminal.focus"
+      ]
+    }
 }
