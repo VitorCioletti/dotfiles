@@ -7,7 +7,7 @@
     "editor.wordWrap": "off",
 
     "extensions.ignoreRecommendations": true,
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "a",
 
     "nerdtree.hideSidebarWhenOpenFile": false,
 
@@ -96,13 +96,5 @@
             "before": ["<leader>", "c"],
             "commands": ["editor.action.commentLine"]
         } 
-    ],
-  "multiCommand.commands": [
-    {
-      "command": "multiCommand.toggleMaximizedPanelAndFocusTerminal",
-      "sequence": [
-        "workbench.action.toggleMaximizedPanel",
-        "workbench.action.terminal.focus"
-      ]
-    }
+    ]
 }
