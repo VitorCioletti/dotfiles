@@ -79,7 +79,7 @@
         },
         {
             "before": ["<leader>", "x"],
-            "commands": ["workbench.action.closePanel", "ctrl+n"]
+            "commands": ["workbench.action.closePanel", "workbench.action.toggleSidebarVisibility"]
         },
         {
             "before": ["<leader>", "s"],
