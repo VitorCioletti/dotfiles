@@ -13,7 +13,7 @@
         {
             "before": ["<S-tab>"],
             "commands": ["workbench.action.previousEditor"]
-        },
+        }
     ],
 
     "vim.normalModeKeyBindingsNonRecursive": [
@@ -80,12 +80,12 @@
         {
             "before": ["<leader>", "x"],
             "commands": [""]
-        },
+        }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": ["<leader>", "c"],
             "commands": ["editor.action.commentLine"]
-        },
-    ],
+        }
+    ]
 }
