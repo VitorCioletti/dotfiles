@@ -28,7 +28,9 @@ alias extracttarball='tar -zxvf'
 # custom scripts
 export PATH="/home/$USER/Arquivos/projetos/loovi/scripts-publicacao/:$PATH"
 export PATH="/home/$USER/Arquivos/projetos/pessoal/dotfiles/scripts/:$PATH"
+export PATH="/home/$USER/.dotnet/:$PATH"
+export FrameworkPathOverride=/usr/bin/mono
 
-# configuring asdf
-source /home/$USER/.asdf/asdf.sh
-source /home/$USER/.asdf/completions/asdf.bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
