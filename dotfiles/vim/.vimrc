@@ -36,33 +36,36 @@ set scrolloff=5
 
 let mapleader = "\<SPACE>"
 
-call plug#begin()
-    Plug 'preservim/nerdtree'
-    Plug 'preservim/nerdcommenter'
-    Plug 'OmniSharp/omnisharp-vim'
-    Plug 'dense-analysis/ale'
-    Plug 'editorconfig/editorconfig-vim'
-    Plug 'junegunn/fzf'
-    Plug 'junegunn/fzf.vim'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-call plug#end()
+"call plug#begin()
+    "Plug 'preservim/nerdtree'
+    "Plug 'preservim/nerdcommenter'
+    "Plug 'OmniSharp/omnisharp-vim'
+    "Plug 'dense-analysis/ale'
+    "Plug 'editorconfig/editorconfig-vim'
+    "Plug 'junegunn/fzf'
+    "Plug 'junegunn/fzf.vim'
+    ""Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"call plug#end()
 
-let g:fzf_vim = {}
-let g:fzf_vim.preview_window = []
+"let g:fzf_vim = {}
+"let g:fzf_vim.preview_window = []
 
-let g:ale_linters = { 'cs': ['omnisharp'] }
+"let g:ale_linters = { 'cs': ['omnisharp'] }
 
-autocmd FileType cs nmap <silent> <buffer> gd <Plug>(omnisharp_go_to_definition)
-autocmd FileType cs nmap <silent> <buffer> <leader>d <Plug>(omnisharp_documentation)
-autocmd FileType cs nmap <silent> <buffer> <leader>o <Plug>(omnisharp_fix_usings)
-autocmd FileType cs nmap <silent> <buffer> <leader>r <Plug>(omnisharp_rename)
-autocmd FileType cs nmap <silent> <buffer> <leader>f <Plug>(omnisharp_code_format)
-autocmd FileType cs nmap <silent> <buffer> <leader>. <Plug>(omnisharp_code_actions)
-autocmd FileType cs xmap <silent> <buffer> <leader>. <Plug>(omnisharp_code_actions)
-autocmd FileType cs nmap <silent> <buffer> [[ <Plug>(omnisharp_navigate_up)
-autocmd FileType cs nmap <silent> <buffer> ]] <Plug>(omnisharp_navigate_down)
-autocmd FileType cs nmap <silent> <buffer> ]] <Plug>(omnisharp_navigate_down)
+"" https://github.com/OmniSharp/omnisharp-vim/issues/859
+"let g:OmniSharp_server_use_net6 = 1
 
-nnoremap <leader>e :NERDTreeFind<CR>
-nnoremap <leader>s :Files<CR>
+"autocmd FileType cs nmap <silent> <buffer> gd <Plug>(omnisharp_go_to_definition)
+"autocmd FileType cs nmap <silent> <buffer> <leader>d <Plug>(omnisharp_documentation)
+"autocmd FileType cs nmap <silent> <buffer> <leader>o <Plug>(omnisharp_fix_usings)
+"autocmd FileType cs nmap <silent> <buffer> <leader>r <Plug>(omnisharp_rename)
+"autocmd FileType cs nmap <silent> <buffer> <leader>f <Plug>(omnisharp_code_format)
+"autocmd FileType cs nmap <silent> <buffer> <leader>. <Plug>(omnisharp_code_actions)
+"autocmd FileType cs xmap <silent> <buffer> <leader>. <Plug>(omnisharp_code_actions)
+"autocmd FileType cs nmap <silent> <buffer> [[ <Plug>(omnisharp_navigate_up)
+"autocmd FileType cs nmap <silent> <buffer> ]] <Plug>(omnisharp_navigate_down)
+"autocmd FileType cs nmap <silent> <buffer> ]] <Plug>(omnisharp_navigate_down)
+
+"nnoremap <leader>e :NERDTreeFind<CR>
+"nnoremap <leader>s :Files<CR>
 

@@ -29,7 +29,7 @@ alias extracttarball='tar -zxvf'
 export PATH="/home/$USER/Arquivos/projetos/loovi/scripts-publicacao/:$PATH"
 export PATH="/home/$USER/Arquivos/projetos/pessoal/dotfiles/scripts/:$PATH"
 export PATH="/home/$USER/.dotnet/:$PATH"
-export FrameworkPathOverride=/usr/bin/mono
+export PATH="/opt/nvim-linux64/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
