@@ -15,8 +15,8 @@ mason_lsp_config.setup {
 }
 
 cmp.setup({
-   mapping = cmp.mapping.preset.insert({
-        ['<tab>'] = cmp.mapping.confirm({select = true}),
+    mapping = cmp.mapping.preset.insert({
+        ['<tab>'] = cmp.mapping.confirm({ select = true }),
     })
 })
 
@@ -37,4 +37,3 @@ lsp_config.lua_ls.setup {
 }
 
 lsp_config.omnisharp.setup {}
-
