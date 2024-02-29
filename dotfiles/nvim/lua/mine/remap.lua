@@ -8,6 +8,8 @@ vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal<CR>')
 
 vim.keymap.set('n', '<leader>zm', ':ZenMode<CR>')
 
+vim.keymap.set('n', '<leader>u', ':UndotreeToggle<CR>')
+
 vim.keymap.set('n', '<leader><leader>', ':so<CR>')
 
 -- lsp
