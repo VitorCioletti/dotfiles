@@ -17,7 +17,6 @@ local function on_startup(use)
         requires = {
             -- LSP Support
             { 'neovim/nvim-lspconfig' },
-            { 'williamboman/mason-lspconfig.nvim' },
             { 'williamboman/mason.nvim' },
             { 'williamboman/mason-lspconfig.nvim' },
 
@@ -31,9 +30,10 @@ local function on_startup(use)
 
             -- Snippets
             { 'L3MON4D3/LuaSnip' },
-            { 'rafamadriz/friendly-snippets' },
         }
     }
+    use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
+    use { "mfussenegger/nvim-dap" }
     use { "mbbill/undotree" }
     use { "folke/zen-mode.nvim" }
     use {

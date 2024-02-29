@@ -14,6 +14,8 @@ vim.keymap.set('n', '<leader><leader>', ':so<CR>')
 
 -- lsp
 local lsp = require('lsp-zero')
+local dap = require('dap')
+local telescope_builtin = require('telescope.builtin')
 
 local function on_attach_lsp(_, bufnr)
     local opts = { buffer = bufnr, remap = false }
@@ -23,9 +25,18 @@ local function on_attach_lsp(_, bufnr)
     vim.keymap.set("n", "<leader>gn", function() vim.diagnostic.goto_next() end, opts)
     vim.keymap.set("n", "<leader>gp", function() vim.diagnostic.goto_prev() end, opts)
     vim.keymap.set("n", "<leader>.", function() vim.lsp.buf.code_action() end, opts)
-    vim.keymap.set("n", "<leader>lr", function() vim.lsp.buf.references() end, opts)
+    vim.keymap.set("n", "<leader>lr", function() telescope_builtin.lsp_references() end, opts)
     vim.keymap.set("n", "<leader>r", function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format() end, opts)
+
+    vim.keymap.set('n', "<leader>ds", function() dap.start() end)
+    vim.keymap.set('n', "<leader>dt", function() dap.stop() end)
+    vim.keymap.set('n', "<F5>", function() dap.continue() end)
+    vim.keymap.set('n', "<F10>", function() dap.step_over() end)
+    vim.keymap.set('n', "<F11>", function() dap.step_into() end)
+    vim.keymap.set('n', "<F12>", function() dap.step_out() end)
+    vim.keymap.set('n', "<F5>", function() dap.continue() end)
+    vim.keymap.set('n', "<leader>b", function() dap.toggle_breakpoint() end)
 end
 
 lsp.on_attach(on_attach_lsp)
