@@ -8,6 +8,8 @@ vim.keymap.set('n', '<leader>ss', ':Telescope grep_string<CR>')
 -- neotree
 vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal<CR>')
 
+--zen mode
+vim.keymap.set('n', '<leader>zm', ':ZenMode<CR>')
 
 -- lsp
 local lsp = require('lsp-zero')
