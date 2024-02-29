@@ -1,5 +1,5 @@
 local function on_startup(use)
-    use 'wbthomason/packer.nvim'
+    use { 'wbthomason/packer.nvim' }
 
     use {
         'nvim-telescope/telescope.nvim',
@@ -7,32 +7,35 @@ local function on_startup(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use ('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+    use { 'nvim-telescope/telescope-ui-select.nvim' }
+
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use { 'catppuccin/nvim', as = 'catppuccin' }
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
         requires = {
             -- LSP Support
-            {'neovim/nvim-lspconfig'},
-            {'williamboman/mason-lspconfig.nvim'},
-            {'williamboman/mason.nvim'},
-            {'williamboman/mason-lspconfig.nvim'},
+            { 'neovim/nvim-lspconfig' },
+            { 'williamboman/mason-lspconfig.nvim' },
+            { 'williamboman/mason.nvim' },
+            { 'williamboman/mason-lspconfig.nvim' },
 
             -- Autocompletion
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-buffer'},
-            {'hrsh7th/cmp-path'},
-            {'saadparwaiz1/cmp_luasnip'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'hrsh7th/cmp-nvim-lua'},
+            { 'hrsh7th/nvim-cmp' },
+            { 'hrsh7th/cmp-buffer' },
+            { 'hrsh7th/cmp-path' },
+            { 'saadparwaiz1/cmp_luasnip' },
+            { 'hrsh7th/cmp-nvim-lsp' },
+            { 'hrsh7th/cmp-nvim-lua' },
 
             -- Snippets
-            {'L3MON4D3/LuaSnip'},
-            {'rafamadriz/friendly-snippets'},
+            { 'L3MON4D3/LuaSnip' },
+            { 'rafamadriz/friendly-snippets' },
         }
     }
-    use("mbbill/undotree")
+    use { "mbbill/undotree" }
+    use { "folke/zen-mode.nvim" }
     use {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v3.x",
@@ -44,4 +47,3 @@ local function on_startup(use)
 end
 
 return require('packer').startup(on_startup)
-
