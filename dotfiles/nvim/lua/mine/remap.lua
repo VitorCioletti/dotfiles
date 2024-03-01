@@ -2,9 +2,11 @@
 vim.keymap.set('n', '<CR>', ':noh<CR>')
 
 vim.keymap.set('n', '<leader>sf', ':Telescope find_files<CR>')
-vim.keymap.set('n', '<leader>ss', ':Telescope grep_string<CR>')
+
+vim.keymap.set('n', '<leader>ss', ':Telescope live_grep<CR>')
 
 vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal<CR>')
+vim.keymap.set('n', '<leader>x', ':Neotree filesystem close<CR>')
 
 vim.keymap.set('n', '<leader>zm', ':ZenMode<CR>')
 
@@ -25,7 +27,10 @@ local function on_attach_lsp(_, bufnr)
     vim.keymap.set("n", "<leader>gn", function() vim.diagnostic.goto_next() end, opts)
     vim.keymap.set("n", "<leader>gp", function() vim.diagnostic.goto_prev() end, opts)
     vim.keymap.set("n", "<leader>.", function() vim.lsp.buf.code_action() end, opts)
+    -- TODO: Adicionar um otimizador de usings aqui
+    -- TODO: Adicionar um formatador lendo editor config
     vim.keymap.set("n", "<leader>lr", function() telescope_builtin.lsp_references() end, opts)
+    vim.keymap.set("n", "<leader>li", function() telescope_builtin.lsp_implementations() end, opts)
     vim.keymap.set("n", "<leader>r", function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format() end, opts)
 
