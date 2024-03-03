@@ -1,5 +1,6 @@
 local function on_startup(use)
     use { 'wbthomason/packer.nvim' }
+    use { "nvim-lua/plenary.nvim" }
 
     use {
         'nvim-telescope/telescope.nvim',
@@ -11,6 +12,11 @@ local function on_startup(use)
 
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
     use { 'catppuccin/nvim', as = 'catppuccin' }
+    use {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        requires = { { "nvim-lua/plenary.nvim" } }
+    }
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v3.x',
