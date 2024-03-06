@@ -13,7 +13,8 @@ nmap <TAB> :tabnext<CR>
 " clear the search buffer when hitting return
 nnoremap <silent> <CR> :noh<CR>
 
-nmap <leader>s :action SearchEverywhere<CR>
+nmap <leader>sf :action SearchEverywhere<CR>
+nmap <leader>ss :action FindInPath<CR>
 nmap <leader>r :action RenameElement<CR>
 nmap <leader>f :action ReformatCode<CR>
 nmap <leader>o :action OptimizeImports<CR>
