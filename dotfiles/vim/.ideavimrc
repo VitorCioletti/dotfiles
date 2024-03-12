@@ -34,3 +34,4 @@ nmap <leader>0 :action Stop<CR>
 nmap <leader>c :action CommentByLineComment<CR>
 vmap <leader>c :action CommentByLineComment<CR>
 nmap <leader>x :action HideAllWindows<CR>
+nmap <leader>qt :tabonly<CR>
