@@ -8,8 +8,6 @@ vim.keymap.set('n', '<leader>ss', ':Telescope live_grep<CR>')
 vim.keymap.set('n', '<leader>e', ':Neotree filesystem reveal<CR>')
 vim.keymap.set('n', '<leader>x', ':Neotree filesystem close<CR>')
 
-vim.keymap.set('n', '<leader>zm', ':ZenMode<CR>')
-
 vim.keymap.set('n', '<leader>u', ':UndotreeToggle<CR>')
 
 vim.keymap.set('n', '<leader><leader>', ':so<CR>')

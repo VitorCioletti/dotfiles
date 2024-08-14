@@ -41,7 +41,7 @@ local function on_startup(use)
     use { "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } }
     use { "mfussenegger/nvim-dap" }
     use { "mbbill/undotree" }
-    use { "folke/zen-mode.nvim" }
+    use { "nvim-neotest/nvim-nio" }
     use {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v3.x",
