@@ -8,30 +8,29 @@ set scrolloff=5
 
 let mapleader = "\<SPACE>"
 
-nmap <TAB> :tabnext<CR>
+nnoremap <TAB> :tabnext<CR>
 
 " clear the search buffer when hitting return
 nnoremap <silent> <CR> :noh<CR>
 
-nmap <leader>sf :action SearchEverywhere<CR>
-nmap <leader>ss :action FindInPath<CR>
-nmap <leader>r :action RenameElement<CR>
-nmap <leader>f :action ReformatCode<CR>
-nmap <leader>o :action OptimizeImports<CR>
-nmap <leader>. :action ShowIntentionActions<CR>
-vmap <leader>. :action ShowIntentionActions<CR>
-nmap <leader>u :action ShowUsages<CR>
-nmap <leader>g :action GotoImplementation<CR>
-nmap <leader>e :NERDTree<CR>
-nmap <leader>t :action ActivateTerminalToolWindow<CR>
-nmap <leader>i :action ParameterInfo<CR>
-nmap <leader>d :action ShowErrorDescription<CR>
-nmap <leader>ne :action GotoNextError<CR>
-nmap <leader>pe :action GotoPreviousError<CR>
-nmap <leader>b :action ToggleLineBreakpoint<CR>
-nmap <leader>9 :action Debug<CR>
-nmap <leader>0 :action Stop<CR>
-nmap <leader>c :action CommentByLineComment<CR>
-vmap <leader>c :action CommentByLineComment<CR>
-nmap <leader>x :action HideAllWindows<CR>
-nmap <leader>qt :tabonly<CR>
+nnoremap <leader>sf :action SearchEverywhere<CR>
+nnoremap <leader>ss :action FindInPath<CR>
+nnoremap <leader>r :action RenameElement<CR>
+nnoremap <leader>f :action ReformatCode<CR>
+nnoremap <leader>o :action OptimizeImports<CR>
+nnoremap <leader>. :action ShowIntentionActions<CR>
+vnoremap <leader>. :action ShowIntentionActions<CR>
+nnoremap <leader>g :action GotoImplementation<CR>
+nnoremap <leader>e :NERDTree<CR>
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>i :action ParameterInfo<CR>
+nnoremap <leader>d :action ShowErrorDescription<CR>
+nnoremap <leader>ne :action GotoNextError<CR>
+nnoremap <leader>pe :action GotoPreviousError<CR>
+nnoremap <leader>b :action ToggleLineBreakpoint<CR>
+nnoremap <leader>9 :action Debug<CR>
+nnoremap <leader>0 :action Stop<CR>
+nnoremap <leader>c :action CommentByLineComment<CR>
+vnoremap <leader>c :action CommentByLineComment<CR>
+nnoremap <leader>x :action HideAllWindows<CR>
+nnoremap <leader>qt :tabonly<CR>
