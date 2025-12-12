@@ -23,7 +23,6 @@ vim.opt.smarttab = true
 -- disable swap file to use undotree
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv('HOME') .. '/.vim/undodir'
 vim.opt.undofile = true
 
 -- new lines inherit indentation of previous ones.
