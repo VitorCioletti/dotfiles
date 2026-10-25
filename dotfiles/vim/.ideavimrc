@@ -10,6 +10,9 @@ let mapleader = "\<SPACE>"
 
 nnoremap <TAB> :tabnext<CR>
 
+" paste without yanking deleted selection
+vnoremap p P
+
 " clear the search buffer when hitting return
 nnoremap <silent> <CR> :noh<CR>
 
@@ -34,3 +37,4 @@ nnoremap <leader>c :action CommentByLineComment<CR>
 vnoremap <leader>c :action CommentByLineComment<CR>
 nnoremap <leader>x :action HideAllWindows<CR>
 nnoremap <leader>qt :tabonly<CR>
+nnoremap <leader>vs :vsplit<CR>
